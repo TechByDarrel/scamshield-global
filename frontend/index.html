@@ -4,47 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ScamShield Global</title>
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>ScamShield Global</h1>
-    <p>Protecting You From Scams Worldwide</p>
+  <!-- Header -->
+  <header class="hero">
+    <div class="container">
+      <h1>ScamShield Global</h1>
+      <p>Protecting You From Scams Worldwide</p>
+      <a href="#verify" class="btn-primary">Verify Now</a>
+    </div>
   </header>
 
-  <nav>
+  <!-- Navigation -->
+  <nav class="navbar">
     <ul>
       <li><a href="#">Latest Scam Alerts</a></li>
       <li><a href="#">How to Stay Safe</a></li>
-      <li><a href="#">Verify Business/Phone</a></li>
-      <li><a href="#">Report a Scam</a></li>
+      <li><a href="#verify">Verify Business/Phone</a></li>
+      <li><a href="#report">Report a Scam</a></li>
     </ul>
   </nav>
 
-  <main>
-    <section id="verify">
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Verify Section -->
+    <section id="verify" class="card">
       <h2>Verify a Business or Phone Number</h2>
       <form id="verifyForm">
         <input type="text" placeholder="Enter business name or phone number" required>
-        <button type="submit">Verify</button>
+        <button type="submit" class="btn-primary">Verify</button>
       </form>
       <div id="result"></div>
     </section>
-    <section id="report">
-  <h2>Report a Scam</h2>
-  <form id="reportForm">
-    <input type="text" placeholder="Business/Phone to report" required>
-    <textarea placeholder="Describe the scam" required></textarea>
-    <button type="submit">Submit Report</button>
-  </form>
-  <div id="reportResult"></div>
-</section> 
+
+    <!-- Report Section -->
+    <section id="report" class="card">
+      <h2>Report a Scam</h2>
+      <form id="reportForm">
+        <input type="text" placeholder="Business/Phone to report" required>
+        <textarea placeholder="Describe the scam" required></textarea>
+        <button type="submit" class="btn-danger">Submit Report</button>
+      </form>
+      <div id="reportResult"></div>
+    </section>
   </main>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="footer">
     <p>&copy; 2026 ScamShield Global. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
-</html> 
+</html>

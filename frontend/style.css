@@ -1,152 +1,123 @@
-
-/* Reset some default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styling */
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f7fa;   /* light background for readability */
-  color: #333;                 /* dark text for contrast */
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  margin: 0;
 }
 
-/* Header */
-header {
-  background: #1e3a8a;          /* deep blue for trust */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
   color: #fff;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 4rem 2rem;
 }
 
-header h1 {
-  font-size: 2.5rem;
+.hero h1 {
+  font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
-header p {
+.hero p {
   font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-/* Navigation bar */
-nav {
-  background: #0f172a;          /* darker navy for contrast */
+/* Navbar */
+.navbar {
+  background: #0f172a;
+  padding: 1rem;
 }
 
-nav ul {
+.navbar ul {
+  list-style: none;
   display: flex;
   justify-content: center;
-  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
-nav ul li {
-  margin: 0 1rem;
-}
-
-nav ul li a {
+.navbar a {
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  transition: background 0.3s ease;
+  font-weight: 600;
 }
 
-nav ul li a:hover {
-  background: #2563eb;          /* lighter blue hover effect */
-  border-radius: 5px;
+.navbar a:hover {
+  color: #60a5fa;
 }
 
-/* Main content */
-main {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-section#verify {
+/* Card Sections */
+.card {
   background: #fff;
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 2rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-section#verify h2 {
+.card h2 {
   margin-bottom: 1rem;
   color: #1e3a8a;
 }
 
-form input {
-  padding: 0.7rem;
-  width: 70%;
+/* Forms */
+form input, form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 0.5rem;
+  border-radius: 6px;
 }
 
-form button {
-  padding: 0.7rem 1.2rem;
+form textarea {
+  min-height: 100px;
+}
+
+/* Buttons */
+.btn-primary {
   background: #2563eb;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
   cursor: pointer;
   font-weight: bold;
+  transition: background 0.3s;
 }
 
-form button:hover {
-  background: #1e40af;          /* darker blue on hover */
+.btn-primary:hover {
+  background: #1e40af;
 }
 
-/* Result box */
-#result {
-  margin-top: 1rem;
+.btn-danger {
+  background: #dc2626;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
   font-weight: bold;
-  color: #dc2626;               /* red for warnings */
+  transition: background 0.3s;
+}
+
+.btn-danger:hover {
+  background: #b91c1c;
 }
 
 /* Footer */
-footer {
-  text-align: center;
+.footer {
   background: #0f172a;
   color: #fff;
-  padding: 1rem;
+  text-align: center;
+  padding: 1.5rem;
   margin-top: 2rem;
-} 
-section#report {
-  background: #fff;
-  padding: 2rem;
-  margin-top: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-section#report h2 {
-  margin-bottom: 1rem;
-  color: #1e3a8a;
-}
-
-section#report form input,
-section#report form textarea {
-  width: 100%;
-  padding: 0.7rem;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-section#report form button {
-  padding: 0.7rem 1.2rem;
-  background: #dc2626; /* red for scam reporting */
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-section#report form button:hover {
-  background: #b91c1c;
 } 
