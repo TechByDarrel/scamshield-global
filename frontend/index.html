@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
+  <!-- Hero Section -->
   <header class="hero">
     <div class="container">
       <h1>ScamShield Global</h1>
@@ -21,10 +21,10 @@
   <!-- Navigation -->
   <nav class="navbar">
     <ul>
-      <li><a href="#">Latest Scam Alerts</a></li>
+      <li><a href="#alerts">Latest Scam Alerts</a></li>
       <li><a href="#">How to Stay Safe</a></li>
-      <li><a href="#verify">Verify Business/Phone</a></li>
-      <li><a href="#report">Report a Scam</a></li>
+      <li><a href="#verify">Verify</a></li>
+      <li><a href="#report">Report</a></li>
     </ul>
   </nav>
 
@@ -50,6 +50,12 @@
       </form>
       <div id="reportResult"></div>
     </section>
+
+    <!-- Scam Alerts Section -->
+    <section id="alerts" class="card">
+      <h2>Latest Scam Alerts</h2>
+      <div id="alertsGrid" class="grid"></div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -59,4 +65,4 @@
 
   <script src="script.js"></script>
 </body>
-</html>
+</html> 
