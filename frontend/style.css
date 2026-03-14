@@ -1,0 +1,152 @@
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f7fa;   /* light background for readability */
+  color: #333;                 /* dark text for contrast */
+}
+
+/* Header */
+header {
+  background: #1e3a8a;          /* deep blue for trust */
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Navigation bar */
+nav {
+  background: #0f172a;          /* darker navy for contrast */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: #2563eb;          /* lighter blue hover effect */
+  border-radius: 5px;
+}
+
+/* Main content */
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section#verify {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section#verify h2 {
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+
+form input {
+  padding: 0.7rem;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+form button {
+  padding: 0.7rem 1.2rem;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #1e40af;          /* darker blue on hover */
+}
+
+/* Result box */
+#result {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #dc2626;               /* red for warnings */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #0f172a;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+} 
+section#report {
+  background: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+section#report h2 {
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+
+section#report form input,
+section#report form textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+section#report form button {
+  padding: 0.7rem 1.2rem;
+  background: #dc2626; /* red for scam reporting */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+section#report form button:hover {
+  background: #b91c1c;
+} 
